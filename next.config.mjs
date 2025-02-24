@@ -1,4 +1,8 @@
 let userConfig = undefined
+import { loadEnvConfig } from '@next/env';
+
+loadEnvConfig(process.cwd());
+
 try {
   userConfig = await import('./v0-user-next.config')
 } catch (e) {
@@ -20,6 +24,11 @@ const nextConfig = {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
+  },
+  env: {
+    AIRTABLE_API_KEY: process.env.AIRTABLE_API_KEY,
+    AIRTABLE_BASE_ID: process.env.AIRTABLE_BASE_ID,
+    AIRTABLE_TABLE_NAME: process.env.AIRTABLE_TABLE_NAME,
   },
 }
 
