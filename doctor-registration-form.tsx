@@ -19,6 +19,7 @@ import {
 import { useToast } from "@/components/ui/use-toast";
 import { Toaster } from "@/components/ui/toaster";
 
+
 interface ServiceCommission {
 	serviceId: string;
 	commission: string;
@@ -874,6 +875,65 @@ const availableServices = [
 		id: "ef2d4dc6-a073-48fb-a7f3-69b79d1d390d",
 		name: "producto generico",
 	},
+	{
+		id: "6f7c2d5a-1e78-4d9d-9c2b-0f89b2a10c47", 
+	 	name: "Cirugía - Apendice"
+	},
+  { 
+	  id: "d90e2c5f-1b3e-4e8a-8d59-4fca3e7e81d2", 
+	  name: "Cirugía - Vesícula" },
+  {
+	  id: "0f50a8bb-2c34-4fbb-885a-dfc60ad3c5d4",
+	  name: "Cirugía - Quiste" },
+  {
+	  id: "a83cbbe2-4b8c-4198-b56f-9f07a92f5037", 
+	  name: "Cirugía - Hernia" },
+  { 
+	  id: "39b7c8a4-9e5b-41d3-8854-86a9e97f58cf", 
+	  name: "Cirugía - Histerectomía" },
+  { 
+	  id: "b4dce278-3197-4a8a-8c48-2ea58f32d33e",
+	  name: "Cirugía - Adenoide" },
+  {
+	  id: "2e93a644-c1b1-491e-a3b3-3d0fbe9e6a9b", 
+	  name: "Cirugía - Fémur" },
+  {
+	  id: "5f6e1a97-0fbb-4c6d-bf55-3c7357f2781b", 
+	  name: "Cirugía - Prostático" },
+  { 
+	  id: "d1bb1c3f-7914-44c1-85f8-9cf9e7b8d951",
+	  name: "Cirugía - Cesárea" },
+  {
+	  id: "f9a2b50e-f0e2-49f3-8228-45b4e0f8971c",
+	  name: "Cirugía - Otras Cirugías" },
+  { 
+	  id: "4b6728cb-22de-4091-9385-d80e58bfbfc1", 
+	  name: "Procedimiento - Sutura" },
+  {
+	  id: "eab5fd19-cfa0-4dd6-9d3e-0bbf2711cb45", 
+	  name: "Procedimiento - Pólipo" },
+  {
+	  id: "6df2eb4f-5a14-4405-9e9c-570ff2a5b008",
+	  name: "Procedimiento - Legrado" },
+  {
+	  id: "807b0a13-8d66-45a1-bbdf-3d03712c8f2d", 
+	  name: "Procedimiento - Quiste Sebáceo" },
+  {
+	  id: "2de8ebd1-ff3e-44b7-871b-beb32a1587d6", 
+	  name: "Procedimiento - Otros Procedimientos" 
+  },
+{ 
+	id: "3e2f1c5a-6d44-4f8d-9e1a-bb3b5f5c7e1e", 
+ 	name: "Procedimiento - PAP y COLPO"
+},
+  { 
+   id: "8b5d3a2c-917e-4d6a-bba6-88f0e6a1e49f",
+   name: "Procedimiento - PAP"
+  },
+  {
+	  id: "a45e79b3-3e91-4a69-8c72-5e9d6c5f2f1d", 
+	  name: "Procedimiento - COLPO"
+  },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 const AIRTABLE_API_KEY = process.env.AIRTABLE_API_KEY;
