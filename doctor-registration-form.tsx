@@ -920,7 +920,20 @@ const availableServices = [
 	  name: "Procedimiento - Quiste Sebáceo" },
   {
 	  id: "2de8ebd1-ff3e-44b7-871b-beb32a1587d6", 
-	  name: "Procedimiento - Otros Procedimientos" },
+	  name: "Procedimiento - Otros Procedimientos" 
+  },
+{ 
+	id: "3e2f1c5a-6d44-4f8d-9e1a-bb3b5f5c7e1e", 
+ 	name: "Procedimiento - PAP y COLPO"
+},
+  { 
+   id: "8b5d3a2c-917e-4d6a-bba6-88f0e6a1e49f",
+   name: "Procedimiento - PAP"
+  },
+  {
+	  id: "a45e79b3-3e91-4a69-8c72-5e9d6c5f2f1d", 
+	  name: "Procedimiento - COLPO"
+  },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 const AIRTABLE_API_KEY = process.env.AIRTABLE_API_KEY;
